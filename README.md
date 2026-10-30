@@ -11,7 +11,7 @@
 | Репозиторий | https://github.com/k0mpas-1/portlingva |
 | Таблица заявок «Portlingva — Leads» | https://docs.google.com/spreadsheets/d/1B8_DCw0lP4tSj5M1etOccMogSZzZ1N2-YNo8vCztiaw/edit |
 | Приёмник заявок (Apps Script Web App) | https://script.google.com/macros/s/AKfycbx3i_CPDQorKrFjSPwUCPimpWlNNUp3j1z0SDAE8PFANyXaME-K5-zokeLfjoz9WmMfNw/exec |
-| Дашборд DataLens «ПОРТЛИНГВА — trial_jan_2027» | _вставить после публикации_ |
+| Дашборд DataLens | не выполнено: сервис не работал (см. внизу) |
 | Instagram (Reel с автоответами) | _вставить ссылку на Reel_ |
 | ВКонтакте — сообщество | _вставить_ |
 | Telegram — канал | _вставить_ |
@@ -38,7 +38,7 @@
 | 5. UTM | реестр из 12 ссылок по правилам 5.1, QR-код и афиша для визиток |
 | 6. Заявки | форма → `fetch` → Apps Script → лист `leads`; проверка полей на сайте и на сервере, защита от повторного `request_id`, статусы со списком и подсветкой |
 | 7. Instagram | ManyChat: автоответ под Reel, ветки «ФРАЗЫ» и «КИТАЙСКИЙ» ([docs/manychat.md](docs/manychat.md)) |
-| 8. Отчёты | Reports, Explore, атрибуция, оповещение, DataLens ([docs/reports.md](docs/reports.md), [docs/datalens.md](docs/datalens.md)) |
+| 8. Отчёты | Reports, Explore, атрибуция, оповещение ([docs/reports.md](docs/reports.md)); дашборд DataLens не выполнен — сервис не работал, подготовлена инструкция [docs/datalens.md](docs/datalens.md) |
 
 ## Структура
 
@@ -64,10 +64,10 @@ screens/               снимки: site, ga4, sheets, utm, instagram, reports,
 
 ## Технологии
 
-HTML, CSS, JavaScript · Google Analytics 4 (gtag.js) · Google Таблицы и Apps Script · ManyChat · Yandex DataLens · GitHub и Vercel.
+HTML, CSS, JavaScript · Google Analytics 4 (gtag.js) · Google Таблицы и Apps Script · ManyChat · GitHub и Vercel.
 
 ---
 
-Не получилось: ___
+Не получилось: дашборд в Yandex DataLens (п. 8.4) — сервис DataLens не работал во время выполнения, поэтому подключение к таблице и дашборд не созданы; описание датасетов, формул и вкладок подготовлено в docs/datalens.md.
 
 Нейросеть использовалась для: генерации стартовой версии сайта (ChatGPT), переработки дизайна, кода страниц и скриптов, приёмника Apps Script, документации и настройки сервисов (Claude). Все запросы — в [docs/prompts.md](docs/prompts.md).
