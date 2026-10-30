@@ -64,10 +64,12 @@
 
 ## Ключевые события (Admin → Events → ★)
 
-`generate_lead`, `contact_click`, `messenger_click`. Других ключевых событий в ресурсе нет. Снимок: `screens/ga4/key-events.png`.
+`generate_lead`, `contact_click`, `messenger_click` — отмечены 30.10.2026. Других ключевых событий в ресурсе нет (`purchase` — системная подсказка GA4, не отмечена). Снимок: `screens/ga4/key-events.png`.
 
 ## Как проверить в DebugView
 
 1. Открыть сайт с параметром `?ga_debug=1`, например `https://portlingva.vercel.app/?ga_debug=1`. Включится `debug_mode` на 2 часа (cookie `ga_debug`). Выключить: `?ga_debug=0`. Второй способ — расширение Google Analytics Debugger.
 2. GA4 → Admin → DebugView. Выполнить действие на сайте, нажать на событие в ленте и раскрыть параметры.
 3. Сохранить снимок в `screens/ga4/<имя_события>.png`.
+
+> **Важно для проверки:** блокировщики рекламы (uBlock, AdGuard и т. п.) блокируют `googletagmanager.com`, и события из такого браузера в GA4 не доходят, хотя заявка в таблицу записывается. Это одна из причин расхождения «заявок в таблице» и `generate_lead` в GA4 (см. report.md). Для DebugView отключите блокировщик на portlingva.vercel.app.
