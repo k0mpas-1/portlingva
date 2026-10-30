@@ -97,7 +97,7 @@ button, input, select { font: inherit; }
 .nav ul { list-style: none; display: flex; gap: 4px; margin: 0; padding: 0; }
 .nav a {
   display: block; padding: 10px 12px; border-radius: 10px; text-decoration: none;
-  color: var(--text); font-weight: 600; font-size: .95rem;
+  color: var(--text); font-weight: 600; font-size: .95rem; white-space: nowrap;
 }
 .nav a:hover { background: var(--violet-100); color: var(--violet); }
 .nav a[aria-current="page"] { background: var(--violet); color: #fff; }

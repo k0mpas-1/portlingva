@@ -36,13 +36,18 @@
   ];
 
   // Приводит значения к требованиям ТЗ 4.3: строка не длиннее 100 символов, пустые не отправляем.
+  // Важно: для gtag.js имя "language" — служебное поле (язык браузера, в запросе ul=…),
+  // поэтому параметр с таким именем не доходит до GA4 как параметр события.
+  // Сайт отправляет его как "lang", а правило Admin → Events → Modify event
+  // «Параметр language = [[lang]]» восстанавливает имя language на стороне GA4.
+  var RENAME = { language: 'lang' };
   function clean(raw) {
     var out = {};
     Object.keys(raw || {}).forEach(function (key) {
       var value = raw[key];
       if (value === undefined || value === null || value === '') return;
       var keepAsIs = typeof value === 'number' || typeof value === 'function';
-      out[key] = keepAsIs ? value : String(value).slice(0, 100);
+      out[RENAME[key] || key] = keepAsIs ? value : String(value).slice(0, 100);
     });
     if (DEBUG) out.debug_mode = true;
     return out;
