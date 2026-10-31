@@ -12,10 +12,10 @@
 | Таблица заявок «Portlingva — Leads» | https://docs.google.com/spreadsheets/d/1B8_DCw0lP4tSj5M1etOccMogSZzZ1N2-YNo8vCztiaw/edit |
 | Приёмник заявок (Apps Script Web App) | https://script.google.com/macros/s/AKfycbx3i_CPDQorKrFjSPwUCPimpWlNNUp3j1z0SDAE8PFANyXaME-K5-zokeLfjoz9WmMfNw/exec |
 | Дашборд DataLens | не выполнено: сервис не работал (см. внизу) |
-| Instagram (Reel с автоответами) | _вставить ссылку на Reel_ |
-| ВКонтакте — сообщество | _вставить_ |
-| Telegram — канал | _вставить_ |
-| YouTube — видео | _вставить_ |
+| Instagram и Reel с автоответами | https://www.instagram.com/k0mpas_1/ · Reel https://www.instagram.com/k0mpas_1/reel/DfIJueyMrWj/ |
+| ВКонтакте · Telegram · YouTube | не публиковались, ссылки U-05…U-09 готовы в реестре |
+| Описание работы | [docs/opisanie.md](docs/opisanie.md) |
+| Презентация к защите | [presentation/zashchita.pdf](presentation/zashchita.pdf) |
 | Реестр ссылок | [docs/utm.md](docs/utm.md) · [docs/utm.csv](docs/utm.csv) |
 | Таблица событий GA4 | [docs/events.md](docs/events.md) |
 | Журнал запросов к нейросети | [docs/prompts.md](docs/prompts.md) |
@@ -52,8 +52,9 @@ js/form.js             форма заявки → Apps Script
 js/level-test.js       тест уровня (12 вопросов)
 img/  files/           изображения WebP/JPEG, видео, PDF
 apps-script/Code.gs    приёмник заявок
-docs/                  prompts, events, utm, images, level-test, report, инструкции, QR, афиша
+docs/                  opisanie (описание работы), scheme, prompts, events, utm, images, level-test, report, инструкции, QR, афиша
 screens/               снимки: site, ga4, sheets, utm, instagram, reports, explore, datalens, lighthouse
+presentation/          zashchita.pdf — презентация к защите
 ```
 
 ## Как проверить
