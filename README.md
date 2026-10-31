@@ -23,7 +23,7 @@
 
 **Ресурс GA4:** «ПОРТЛИНГВА — сайт», Measurement ID **`G-2CZ494QV10`**, поток Portlingva (16231844524).
 
-Доступ Viewer к ресурсу GA4 выдан: ___ (e-mail Заказчика)
+Доступ Viewer к ресурсу GA4 выдан: mmaxim02022004@gmail.com
 
 ---
 
